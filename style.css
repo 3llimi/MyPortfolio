@@ -1,0 +1,604 @@
+body {
+    margin: 0;
+}
+.P1 {
+    background-image: url('Assests/_MG_9460.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.P2 {
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+}
+
+.P3 {
+    background-color: #E7E7E7;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+}
+
+.P4 {
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+}
+
+.P5 {
+    background-color: #E7E7E7;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+    text-align: center;
+    line-height: 1px;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.33);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a{
+    text-decoration: none;
+}
+#upwork:hover {
+    background-color: #73BB44;
+    width: 75px;
+    height:75px;
+}
+
+#upwork:hover .fa-upwork {
+    color: white;
+    transform: scale(2);
+    transition: 0.8s;
+}
+
+#telegram:hover{
+    background-color: #2AABEE;
+    width: 75px;
+    height:75px;
+}
+
+#telegram:hover .fa-telegram {
+    color: white;
+    transform: scale(4);
+    transition: 0.8s;
+}
+
+#behance:hover{
+    background-color: #000000;
+    width: 75px;
+    height:75px;
+}
+
+#behance:hover .fa-behance{
+    color: white;
+    transform: scale(2);
+    transition: 0.8s;
+}
+
+#github:hover{
+    background-color: #000000;
+    width: 75px;
+    height:75px;
+}
+
+#github:hover .fa-github{
+    color: white;
+    transform: scale(4);
+    transition: 0.8s;
+}
+
+#instagram:hover{
+    background-color: #ee2a7b;
+    width: 75px;
+    height:75px;
+}
+
+#instagram:hover .fa-instagram{
+    color: white;
+    transform: scale(3.5);
+    transition: 0.8s;
+}
+
+#linkedin:hover{
+    background-color: #0077B5;
+    width: 75px;
+    height:75px;
+}
+
+#linkedin:hover .fa-linkedin-in{
+    color: white;
+    transform: scale(3);
+    transition: 0.8s;
+}
+.credit{
+    position: absolute;
+    font-family: 'Satoshi', sans-serif;
+    color: #FFFFFF;
+    top: 0;
+    right: 0;
+    margin-right: 25px;
+    font-weight: 400;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.name {
+    font-family: 'Satoshi', sans-serif;
+    color: #FFFFFF;
+    font-size: 8em;
+    text-align: left;
+    margin-left: 20px;
+    font-weight: 500;
+    line-height: 1;
+}
+
+.edu{
+    font-family: 'Satoshi', sans-serif;
+    color: #FFFFFF;
+    font-size: 3rem;
+    text-align: center;
+    font-weight: 500;
+    margin-top: -150px;
+    line-height: 1.1;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+}
+
+.circular--portrait {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.circular--portrait img {
+    width: 100%; 
+    height: auto; 
+    margin-top: -125px;
+}
+
+.links {
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    border-radius: 39px;
+    transform: translateX(-50%);
+    background-color: #505050;
+    opacity: 75%;
+    width: 500px;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    padding: 0 15px;
+}
+
+.circle {
+    width: 50px;
+    height: 50px;
+    background-color: #D9D9D9;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: width 1s, height 1s;
+}
+
+.circle:hover{
+    cursor: pointer;
+    transition: 0.5s;
+}
+.fa-upwork{
+    color:#73BB44 ;
+    transform: scale(1.5);
+    transition: transform 1s;
+
+}
+
+.fa-telegram{
+    color:#2AABEE ;
+    transform: scale(2);
+    transition: transform 1s;
+}
+
+.fa-behance{
+    color: #000000;
+    transform: scale(1.5);
+    transition: transform 1s;
+}
+
+.fa-github{
+    color: #000000;
+    transform: scale(2);
+    transition: transform 1s;
+}
+
+.fa-instagram{
+    color: #ee2a7b;
+    transform: scale(2);
+    transition: transform 1s;
+}
+
+.fa-linkedin-in{
+    color:#0077B5;
+    transform: scale(1.5);
+    transition: transform 1s;
+}
+
+.about-container {
+    display: flex;
+    width: 100%;
+    padding: 0 50px;
+    box-sizing: border-box;
+}
+
+.about-header {
+    color: #FFFFFF;
+    font-family: 'Satoshi', sans-serif;
+    font-size: 3.5em;
+    text-align: left;
+    flex: 1;
+    align-self: flex-start;
+    position: absolute;
+    top: 50px; 
+}
+
+.about-content {
+    color: #FFFFFF;
+    font-family: 'Satoshi', sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 2;
+    padding-left: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.about1 {
+    font-size: 2.2rem;
+    font-weight: 500;
+    margin-bottom: -30px;
+}
+.about2 {
+    font-size: 1.261rem;
+    margin-top: 0;
+}
+
+.quote {
+    font-size: 10rem;
+    color: #FFFFFF; 
+    position: absolute;
+}
+
+.quote:first-of-type {
+    top: 300px;
+    left: 200px;
+}
+
+.quote:last-of-type {
+    bottom: 125px; 
+    right: 200px;
+}
+
+.skills{
+    text-align: center;
+    font-family: 'Satoshi', sans-serif;
+    color: #000;
+    line-height: 50px;
+    flex: 1;
+    position: absolute;
+    top: 50px;
+    right: 100px; 
+}
+
+.skill{
+    font-size: 3em;
+    font-weight: 1000;
+}
+
+.technologies{
+    font-size: 1.8em;
+    font-weight: 700;
+}
+
+.et{
+    font-size: 2.8em;
+    font-weight: 100;
+    font-style: italic;
+}
+
+.tech{
+    font-family: 'Satoshi', sans-serif;
+    color: #000;
+    top: 100px;
+    position: absolute;
+    left: 100px;
+}
+
+.techtitle{
+    font-size: 2.8em;
+    font-weight: 900;
+    font-style: italic;
+}
+
+
+
+.photoli{
+    font-size: 2.8em;
+    font-weight: 500;
+    margin: 0;
+    margin-left: 40px;
+}
+
+.techli{
+    font-size: 2.8em;
+    font-weight: 500;
+    margin: 0;
+}
+
+.star{
+    font-size: 4rem;
+    font-weight: 900;
+
+}
+
+.skill-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.square {
+    width: 50px;
+    height: 50px;
+    background-color: #1E1E1E;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25%;
+}
+
+.square img {
+    width: 30px;
+    height: 30px;
+}
+
+.photo{
+    font-family: 'Satoshi', sans-serif;
+    color: #000;
+    top: 100px;
+    position: absolute;
+    right: 600px;
+}
+
+.phototitle{
+    font-size: 2.8em;
+    font-weight: 900;
+    font-style: italic;
+}
+
+.photography{
+    background: -webkit-linear-gradient(0deg, rgba(171,16,16,1) 20%, rgba(198,92,92,1) 56%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.photolist{
+    list-style-type:none;
+    text-align: center;
+    top: 80px;
+    left: 50px;
+    position: absolute;
+}
+
+.art-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    left: 165px;
+    position: absolute;
+
+}
+
+.carousel-container {
+    position: relative;
+    width: 400px;
+    max-width: 400px;
+    margin: 0 auto;
+    top: 100px;
+    left: 12.5px;
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.carousel-img {
+    width: 100%;
+    display: block;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.credits{
+    color: #000;
+    position:absolute;
+    top:640px;
+    left: 300px;
+    font-family: 'Satoshi', sans-serif;
+    font-style: italic;
+}
+
+.projects{
+    text-align: center;
+    font-family: 'Satoshi', sans-serif;
+    color: white;
+    line-height: 50px;
+    flex: 1;
+    position: absolute;
+    top: 50px;
+    left: 100px; 
+}
+
+.project{
+    font-size: 3em;
+    font-weight: 1000;
+}
+
+.achievments{
+    font-size: 1.8em;
+    font-weight: 700;
+}
+
+.achiev-container{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Satoshi', sans-serif;
+    color: white;
+    text-align: center;
+    line-height: 0px;
+}
+
+.achiev-title{
+    font-size: 2.5em;
+    font-weight: 400;
+}
+
+.role{
+    font-weight: 700;
+    font-size: 1em;
+}
+
+.et-role{
+    font-weight: 100;
+    font-style: italic;
+}
+
+.act1{
+    right: 515px;
+    top: 115px;
+    position: absolute;
+    font-weight: 100;
+}
+
+.act2{
+    right: 535px;
+    top: 255px;
+    position: absolute;
+    font-weight: 100;
+}
+
+.act3{
+    right: 515px;
+    top: 400px;
+    position: absolute;
+    font-weight: 100;
+}
+
+.act4{
+    right: 250px;
+    top: 530px;
+    position: absolute;
+    font-weight: 100;
+}
+
+.act5{
+    right: 570px;
+    top: 685px;
+    position: absolute;
+    font-weight: 100;
+}
+
+.getintouch{
+    font-family: 'Satoshi', sans-serif;
+    font-weight: 1000;
+}
+.copyrights{
+    font-family: 'Satoshi', sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.email{
+    font-family: 'Satoshi', sans-serif;
+    font-weight: 900;
+    margin: 30px;
+    color: black;
+    font-size: 1em;
+
+}
+
+ul{
+    list-style: none;
+}
+
+
+
+.P4 .achiev-container li {
+    margin: 80px;
+}
