@@ -2,7 +2,7 @@ body {
     margin: 0;
 }
 .P1 {
-    background-image: url('bgimage.jpg');
+    background-image: url('Assests/bgimage.jpg');
     background-size: cover;
     background-position: center;
     height: 100vh;
