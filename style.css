@@ -602,3 +602,58 @@ ul{
 .P4 .achiev-container li {
     margin: 80px;
 }
+
+.comic-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color:black;
+}
+
+#comic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    text-align: center;
+}
+
+#comic img {
+    max-width: 100%;
+    height: auto;
+}
+
+#comic .comic-title {
+    font-size: 1.5em;
+    font-family: 'Satoshi', sans-serif;
+    font-weight: 900;
+    color: white;
+    margin: 10px 0;
+}
+
+#comic .comic-date,
+#comic .since {
+    font-size: 1em;
+    color: gray;
+    font-family: 'Satoshi', sans-serif;
+    font-weight: 500;
+}
+
+.showBtn {
+    background-color: white;
+    font-family: 'Satoshi', sans-serif;
+    font-weight: 900;
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    width: 150px;
+    height: 50px;
+    border-radius: 45px;
+}
+
+.showBtn:hover {
+    background-color: gray;
+    transition: 0.8s;
+}
