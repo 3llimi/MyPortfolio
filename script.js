@@ -1,15 +1,12 @@
-import { Comic } from './interfaces';
-import { formatDistance } from 'date-fns';
-
 document.addEventListener('DOMContentLoaded', () => {
-    const carousel = document.querySelector('.carousel') as HTMLElement;
+    const carousel = document.querySelector('.carousel');
     const carouselItems = document.querySelectorAll('.carousel-item');
-    const prevButton = document.querySelector('.prev') as HTMLElement;
-    const nextButton = document.querySelector('.next') as HTMLElement;
+    const prevButton = document.querySelector('.prev');
+    const nextButton = document.querySelector('.next');
 
     let currentIndex = 0;
 
-    function showSlide(index: number) {
+    function showSlide(index) {
         if (index < 0) {
             currentIndex = carouselItems.length - 1;
         } else if (index >= carouselItems.length) {
@@ -28,16 +25,16 @@ document.addEventListener('DOMContentLoaded', () => {
         showSlide(currentIndex + 1);
     });
 
+    // Optional: auto-slide
     setInterval(() => {
         showSlide(currentIndex + 1);
     }, 5000);
 });
 
-document.getElementById("comicBtn")?.addEventListener('click', () => {
-    const email: string = 'a.alimi@innopolis.university';
-    const params = new URLSearchParams({ email });
-
-    const url = `https://fwd.innopolis.university/api/hw2?${params.toString()}`;
+document.getElementById("comicBtn").addEventListener('click', () => {
+    const email = 'a.alimi@innopolis.university'; 
+    const url = new URL('https://fwd.innopolis.university/api/hw2');
+    url.search = new URLSearchParams({ email });
 
     fetch(url)
         .then(response => {
@@ -46,8 +43,8 @@ document.getElementById("comicBtn")?.addEventListener('click', () => {
             }
             return response.json();
         })
-        .then((data: string) => {
-            const comicId: string = data;
+        .then(data => {
+            const comicId = data;
             if (!comicId) {
                 throw new Error('Comic ID not found in the response');
             }
@@ -59,18 +56,16 @@ document.getElementById("comicBtn")?.addEventListener('click', () => {
             }
             return response.json();
         })
-        .then((comic: Comic) => {
-            console.log('Comic data:', comic);
-            displayComic(comic);
+        .then(comicData => {
+            console.log('Comic data:', comicData);
+            displayComic(comicData);
         })
         .catch(error => {
             console.error('Error fetching comic:', error);
         });
 
-    function displayComic(comic: Comic) {
+    function displayComic(comic) {
         const comicContainer = document.getElementById('comic');
-        if (!comicContainer) return;
-
         while (comicContainer.firstChild) {
             comicContainer.removeChild(comicContainer.firstChild);
         }
@@ -86,12 +81,19 @@ document.getElementById("comicBtn")?.addEventListener('click', () => {
         const comicDate = document.createElement('div');
         comicDate.classList.add('comic-date');
         const date = new Date(comic.year, comic.month - 1, comic.day);
-        const currentDate = new Date();
-        const formattedDate = formatDistance(date, currentDate, { addSuffix: true });
+        let currYear = new Date().getFullYear();
+        const since = currYear - comic.year;
+        console.log(since)
+        comicDate.textContent = `Published on: ${date.toLocaleDateString()}`;
+        const age = document.createElement('div');
+        age.classList.add('since');
 
-        comicDate.textContent = `Published ${formattedDate}`;
+        age.textContent = `Published since: ${since} Years`;
+
         comicContainer.appendChild(comicTitle);
         comicContainer.appendChild(comicImage);
         comicContainer.appendChild(comicDate);
+        comicContainer.appendChild(age);
+
     }
 });
