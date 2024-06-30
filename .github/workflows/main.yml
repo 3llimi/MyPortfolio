@@ -2,9 +2,11 @@ name: CI
 
 on:
   push:
-    branches: [main]
+    branches:
+      - main  # Adjust to your main branch name
   pull_request:
-    branches: [main]
+    branches:
+      - main  # Adjust to your main branch name
   workflow_dispatch:
 
 jobs:
