@@ -25,5 +25,5 @@ jobs:
 
       - name: Install dependencies and build
         run: |
-          npm install --save-dev rollup
+          npm install --save-dev rollup 
           npm run build  # Run npm build script
