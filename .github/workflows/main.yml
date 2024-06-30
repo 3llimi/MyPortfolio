@@ -26,4 +26,5 @@ jobs:
       - name: Install dependencies and build
         run: |
           npm install  # Install dependencies
+          npm install --save-dev @rollup/plugin-typescript tslib
           npm run build  # Run npm build script
