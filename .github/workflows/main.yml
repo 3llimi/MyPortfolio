@@ -22,6 +22,10 @@ jobs:
           npm install --save-dev rollup
           npm run build
 
+      - name: Verify build output
+        run: |
+          ls -l ./dist
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
