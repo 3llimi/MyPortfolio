@@ -3,10 +3,10 @@ name: CI
 on:
   push:
     branches:
-      - main 
+      - main
   pull_request:
     branches:
-      - main 
+      - main
   workflow_dispatch:
 
 jobs:
@@ -19,12 +19,12 @@ jobs:
 
       - name: Install dependencies and build
         run: |
-          npm install --save-dev rollup 
-          npm run build 
+          npm install --save-dev rollup
+          npm run build
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GH_TOKEN }}
-          publish_dir: ./dist 
-          publish_branch: gh-pages 
+          publish_dir: ./dist
+          publish_branch: gh-pages
