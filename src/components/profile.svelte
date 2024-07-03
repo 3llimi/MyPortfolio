@@ -5,9 +5,9 @@
     let currentIndex = writable(0);
     let interval: number;
     let carouselItems = [
-        "/src/assets/image1.jpg",
-        "/src/assets/image2.jpg",
-        "/src/assets/image3.jpg",
+        "/assets/src/assets/image1.jpg",
+        "/assets//src/assets/image2.jpg",
+        "/assets/src/assets/image3.jpg",
     ];
     let carouselElement: HTMLDivElement;
 

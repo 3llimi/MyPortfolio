@@ -18,7 +18,7 @@
                     </div>
                     <div class="circular--portrait">
                         <img
-                            src="/src/assets/profile.jpg"
+                            src="./assets/src/assets/profile.jpg"
                             alt=""
                             class="ppic"
                         />
