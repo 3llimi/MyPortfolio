@@ -10,14 +10,18 @@
         year: number;
         month: number;
         day: number;
+        // Exclude id property if it's not part of your ComicData structure
     }
 
     let comicData: ComicData | null = null;
     let showComic: boolean = false;
+    let loading: boolean = false;
+    let error: string | null = null;
 
     async function fetchComic() {
         const email = "a.alimi@innopolis.university";
         try {
+            loading = true;
             const response = await fetch(
                 `https://fwd.innopolis.university/api/hw2?email=${encodeURIComponent(email)}`,
             );
@@ -47,6 +51,9 @@
             }
         } catch (error) {
             console.error("Error fetching comic:", error);
+            error = "Failed to fetch comic.";
+        } finally {
+            loading = false;
         }
     }
 
@@ -58,7 +65,12 @@
 
 <div class="comic">
     <div class="comic-container">
-        <button class="showBtn" on:click={fetchComic}>COMIC</button>
+        <button class="showBtn" on:click={fetchComic} disabled={loading}>
+            {loading ? 'Loading...' : 'Fetch Comic'}
+        </button>
+        {#if error}
+            <p>{error}</p>
+        {/if}
     </div>
     <div class="comic-container">
         {#if showComic && comicData}
@@ -77,13 +89,14 @@
                     Years
                 </div>
             </div>
-        {:else if !showComic}
+        {:else if !showComic && !loading}
             <p>Click the button to load a comic.</p>
         {:else}
             <p>Loading...</p>
         {/if}
     </div>
 </div>
+
 
 <style>
     .comic {
