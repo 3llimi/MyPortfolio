@@ -1,7 +1,6 @@
 <script lang="ts">
   import { onMount } from 'svelte'
   import { writable } from 'svelte/store'
-
   let currentIndex = writable(0)
   let interval: number
   let carouselItems = [
