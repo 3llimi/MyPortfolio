@@ -13,7 +13,7 @@
 	<nav>
 		<div class="nav">
 			<h1 class="titles">
-				<a href="/about">HOME</a>
+				<a href="/">HOME</a>
 			</h1>
 			<h1 class="titles">
 				<a href="/comic">COMIC</a>
@@ -30,7 +30,9 @@
 				<a id="email" href="mailto:3llimi69@gmail.com">
 					<h1 class="email">3llimi69@gmail.com</h1>
 				</a>
-				<h6 class="copyrights">© 2024 Designed and Developed by Ahmed Baha Eddine Alimi</h6>
+				<h6 class="copyrights">
+					© 2024 Designed and Developed by Ahmed Baha Eddine Alimi
+				</h6>
 			</div>
 		</div>
 	</footer>
@@ -38,7 +40,7 @@
 
 <style>
 	body {
-		font-family: 'Satoshi', sans-serif;
+		font-family: "Satoshi", sans-serif;
 		margin: 0;
 		padding: 0;
 	}
@@ -47,7 +49,7 @@
 		display: flex;
 		flex-direction: row;
 		column-gap: 20px;
-		font-family: 'Satoshi', sans-serif;
+		font-family: "Satoshi", sans-serif;
 		font-weight: 900;
 		justify-content: center;
 		background-color: black;
@@ -68,18 +70,18 @@
 	}
 
 	.getintouch {
-		font-family: 'Satoshi', sans-serif;
+		font-family: "Satoshi", sans-serif;
 		font-weight: 1000;
 	}
 
 	.copyrights {
-		font-family: 'Satoshi', sans-serif;
+		font-family: "Satoshi", sans-serif;
 		font-weight: 400;
 		font-style: italic;
 	}
 
 	.email {
-		font-family: 'Satoshi', sans-serif;
+		font-family: "Satoshi", sans-serif;
 		font-weight: 900;
 		margin: 30px;
 		color: black;
