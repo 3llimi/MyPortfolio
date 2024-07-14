@@ -15,7 +15,7 @@ const config = {
 			strict: false // ignore dynamic routes error
 		}),
 		paths: {
-			base: process.env.NODE_ENV === 'production' ? '/MyPortfolio' : ''
+			base: "/MyPortfolio"
 		}
 	}
 };
