@@ -1,14 +1,10 @@
 <script lang="ts">
     import { onMount } from "svelte";
     import { writable } from "svelte/store";
-    import image1 from "./src/assets/image1.jpg";
-    import image2 from "./src/assets/image2.jpg";
-    import image3 from "./src/assets/image3.jpg";
 
     let currentIndex = writable(0);
     let interval: number;
-    let carouselItems = [image1, image2, image3];
-
+    let carouselItems = ["image1.jpg", "image2.jpg", "image3.jpg"];
     let carouselElement: HTMLDivElement;
 
     onMount(() => {
@@ -312,7 +308,7 @@
                         >
                             <img
                                 src={item}
-                                alt={`Image ${index + 1}`}
+                                alt="Image{index + 1}"
                                 class="carousel-img"
                             />
                         </div>
