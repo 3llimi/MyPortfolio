@@ -11,11 +11,11 @@ const config = {
 		adapter: adapter({
 			pages: 'build',
 			assets: 'build',
-			fallback: 'app.html', // specify the fallback
+			fallback: 'index.html', // specify the fallback
 			strict: false // ignore dynamic routes error
 		}),
 		paths: {
-			base: process.env.NODE_ENV === 'production' ? '/' : ''
+			base: process.env.NODE_ENV === 'production' ? '/MyPortfolio' : ''
 		}
 	}
 };
