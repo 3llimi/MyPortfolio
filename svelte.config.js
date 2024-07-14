@@ -12,10 +12,9 @@ const config = {
 			pages: 'build',
 			assets: 'build',
 			fallback: 'index.html', // specify the fallback
-			strict: false // ignore dynamic routes error
 		}),
 		paths: {
-			base: "/MyPortfolio/"
+			base: "/MyPortfolio"
 		}
 	}
 };
