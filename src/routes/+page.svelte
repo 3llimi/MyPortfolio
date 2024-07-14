@@ -392,7 +392,7 @@
 
 <style>
     .P1 {
-        background-image: url("assets/bgimage.jpg");
+        background-image: url("/assets/bgimage.jpg");
         background-size: cover;
         background-position: center;
         height: 100vh;
