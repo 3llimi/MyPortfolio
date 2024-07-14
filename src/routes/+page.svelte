@@ -4,7 +4,11 @@
 
     let currentIndex = writable(0);
     let interval: number;
-    let carouselItems = ["image1.jpg", "image2.jpg", "image3.jpg"];
+    let carouselItems = [
+        "assets/image1.jpg",
+        "assets/image2.jpg",
+        "assets/image3.jpg",
+    ];
     let carouselElement: HTMLDivElement;
 
     onMount(() => {
@@ -46,7 +50,7 @@
                     </div>
                 </div>
                 <div class="circular--portrait">
-                    <img src="./src/assets/profile.jpg" alt="" class="ppic" />
+                    <img src="assets/profile.jpg" alt="" class="ppic" />
                 </div>
             </div>
         </div>
@@ -138,7 +142,7 @@
                 <div class="skill-container">
                     <div class="square">
                         <img
-                            src="./src/assets/icons/figma.svg"
+                            src="assets/icons/figma.svg"
                             alt="Figma"
                             title="Figma"
                         />
@@ -150,42 +154,42 @@
                 <div class="skill-container">
                     <div class="square">
                         <img
-                            src="./src/assets/icons/file-type-html.svg"
+                            src="assets/icons/file-type-html.svg"
                             alt="HTML"
                             title="HTML"
                         />
                     </div>
                     <div class="square">
                         <img
-                            src="./src/assets/icons/file-type-css.svg"
+                            src="assets/icons/file-type-css.svg"
                             alt="CSS"
                             title="CSS"
                         />
                     </div>
                     <div class="square">
                         <img
-                            src="./src/assets/icons/javascript-js.svg"
+                            src="assets/icons/javascript-js.svg"
                             alt="JavaScript"
                             title="JavaScript"
                         />
                     </div>
                     <div class="square">
                         <img
-                            src="./src/assets/icons/file-type-angular.svg"
+                            src="assets/icons/file-type-angular.svg"
                             alt="Angular"
                             title="Angular"
                         />
                     </div>
                     <div class="square">
                         <img
-                            src="./src/assets/icons/react.svg"
+                            src="assets/icons/react.svg"
                             alt="React"
                             title="React"
                         />
                     </div>
                     <div class="square">
                         <img
-                            src="./src/assets/icons/file-type-typescript-official.svg"
+                            src="assets/icons/file-type-typescript-official.svg"
                             alt="TypeScript"
                             title="TypeScript"
                         />
@@ -197,35 +201,35 @@
                 <div class="skill-container">
                     <div class="square">
                         <img
-                            src="./src/assets/icons/node-js.svg"
+                            src="assets/icons/node-js.svg"
                             alt="NodeJS"
                             title="NodeJS"
                         />
                     </div>
                     <div class="square">
                         <img
-                            src="./src/assets/icons/postgresql.svg"
+                            src="assets/icons/postgresql.svg"
                             alt="PostgreSQL"
                             title="PostgreSQL"
                         />
                     </div>
                     <div class="square">
                         <img
-                            src="./src/assets/icons/file-type-mysql.svg"
+                            src="assets/icons/file-type-mysql.svg"
                             alt="MySQL"
                             title="MySQL"
                         />
                     </div>
                     <div class="square">
                         <img
-                            src="./src/assets/icons/mongodb-original.svg"
+                            src="assets/icons/mongodb-original.svg"
                             alt="MongoDB"
                             title="MongoDB"
                         />
                     </div>
                     <div class="square">
                         <img
-                            src="./src/assets/icons/file-type-php.svg"
+                            src="assets/icons/file-type-php.svg"
                             alt="PHP"
                             title="PHP"
                         />
@@ -235,42 +239,38 @@
                 <div class="skill-container">
                     <div class="square">
                         <img
-                            src="./src/assets/icons/python.svg"
+                            src="assets/icons/python.svg"
                             alt="Python"
                             title="Python"
                         />
                     </div>
                     <div class="square">
                         <img
-                            src="./src/assets/icons/c-original.svg"
+                            src="assets/icons/c-original.svg"
                             alt="C"
                             title="C"
                         />
                     </div>
                     <div class="square">
                         <img
-                            src="../src/assets/icons/c-sharp-c.svg"
+                            src="assets/icons/c-sharp-c.svg"
                             alt="C#"
                             title="C#"
                         />
                     </div>
                     <div class="square">
-                        <img
-                            src="./src/assets/icons/c.svg"
-                            alt="C++"
-                            title="C++"
-                        />
+                        <img src="assets/icons/c.svg" alt="C++" title="C++" />
                     </div>
                     <div class="square">
                         <img
-                            src="./src/assets/icons/java-original.svg"
+                            src="assets/icons/java-original.svg"
                             alt="Java"
                             title="Java"
                         />
                     </div>
                     <div class="square">
                         <img
-                            src="./src/assets/icons/arduino.svg"
+                            src="assets/icons/arduino.svg"
                             alt="Arduino"
                             title="Arduino"
                         />
@@ -291,7 +291,7 @@
                 <div class="art-container">
                     <div class="square">
                         <img
-                            src="./src/assets/icons/adobe-lightroom.svg"
+                            src="assets/icons/adobe-lightroom.svg"
                             alt="Lightroom"
                             title="Lightroom"
                         />
@@ -392,7 +392,7 @@
 
 <style>
     .P1 {
-        background-image: url("./src/assets/bgimage.jpg");
+        background-image: url("assets/bgimage.jpg");
         background-size: cover;
         background-position: center;
         height: 100vh;
