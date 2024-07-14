@@ -15,7 +15,7 @@ const config = {
 			strict: false // ignore dynamic routes error
 		}),
 		paths: {
-			base: "/MyPortfolio"
+			base: "/MyPortfolio/"
 		}
 	}
 };
